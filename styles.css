@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", serif;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", sans-serif;
+}
+
+main {
+  display: flex;
+}
+main .splash {
+  flex: 1;
+  margin: 1.5rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom right, #28CC3B, #B10DC9);
+  color: rgba(255, 255, 255, 0.8);
+}
+main .splash__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=styles.css.map */
