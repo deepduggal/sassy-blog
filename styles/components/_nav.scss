@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    width: 40%;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f1356d;
+    }
+  }
+
+  &__cta {
+    padding: 0.5rem 1rem;
+    background-color: #f1356d;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f1356d;
+    }
+  }
+}

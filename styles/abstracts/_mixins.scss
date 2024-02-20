@@ -1,0 +1,37 @@
+@use '../abstracts/colors';
+
+/**
+ * Setups a flex container
+ */
+@mixin flex-layout($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/**
+ * Styles a button
+ */
+@mixin button-style($bkgrdColor: colors.$offwhite, $textColor: black, $borderRadius: 0.675rem) {
+  background-color: $bkgrdColor;
+  color: $textColor;
+  border-radius: $borderRadius;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($bkgrdColor, 10%);
+  }
+}
+
+/**
+ * Styles font
+ */
+@mixin font-style($family: 'Lato', $size: 1rem, $lineHeight: 1.5) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $lineHeight;
+}

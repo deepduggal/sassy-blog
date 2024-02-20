@@ -1,0 +1,67 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+
+
+@media screen and (min-width: 0px) {
+
+  .dashboard {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "sidebar"
+      "main";
+
+    &__sidebar {
+      grid-area: sidebar;
+
+      li {
+        list-style: none;
+        margin-bottom: 1rem;
+
+        &:first-child a {
+          @include mixins.button-style(colors.$purple, colors.$offwhite);
+        }
+
+        a {
+          @include mixins.button-style(colors.$red, colors.$offwhite);
+          display: block;
+
+
+        }
+
+      }
+    }
+
+    &__content {
+      grid-area: main;
+    }
+
+    &__heading {
+      @include mixins.font-style('Arial', 2rem, 1.5rem);
+    }
+
+    &__content-item h2 {
+      @include mixins.font-style('Times New Roman', 1.6rem, 1.5rem);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "sidebar main main"
+      "sidebar main main";
+
+    &__sidebar {
+      li {
+        a {
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+}

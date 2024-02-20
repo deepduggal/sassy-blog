@@ -1,0 +1,29 @@
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+
+@use '../components/header';
+@use '../components/nav';
+@use '../components/main';
+@use '../components/footer';
+
+
+
+// Page Setup
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: fonts.$fontFamily;
+  background: colors.$offwhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: fonts.$headingsFontFamily;
+}

@@ -1,0 +1,16 @@
+@use '../abstracts/colors';
+
+.splash {
+  flex: 1;
+  margin: 1.5rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom right, colors.$green, colors.$purple);
+  color: colors.$offwhite;
+
+  &__heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+}
