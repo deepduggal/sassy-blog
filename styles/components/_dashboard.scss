@@ -5,30 +5,35 @@
 @media screen and (min-width: 0px) {
 
   .dashboard {
-    padding: 1.5rem;
+    flex: 1;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 3rem auto;
     grid-template-areas:
       "sidebar"
       "main";
 
     &__sidebar {
       grid-area: sidebar;
+      @include mixins.flex-layout();
+      flex-direction: row;
+      background-color: colors.$red;
 
-      li {
-        list-style: none;
-        margin-bottom: 1rem;
+      button {
+        flex: 1;
+        padding: 1rem; // justify-content: center;
 
-        &:first-child a {
+        &:first-child {
           @include mixins.button-style(colors.$purple, colors.$offwhite);
         }
 
-        a {
+        &:not(:first-child) {
           @include mixins.button-style(colors.$red, colors.$offwhite);
-          display: block;
+        }
 
-
+        i {
+          height: 1.5rem;
+          width: 1.5rem;
         }
 
       }
@@ -36,13 +41,14 @@
 
     &__content {
       grid-area: main;
+      padding: 1.5rem 1.5rem 0 1.5rem;
     }
 
     &__heading {
-      @include mixins.font-style('Arial', 2rem, 1.5rem);
+      @include mixins.font-style('Arial', 2.3rem, 1.5rem);
     }
 
-    &__content-item h2 {
+    &__content-item .article__title {
       @include mixins.font-style('Times New Roman', 1.6rem, 1.5rem);
     }
   }
@@ -50,18 +56,19 @@
 
 @media screen and (min-width: 768px) {
   .dashboard {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3rem auto;
     grid-template-areas:
-      "sidebar main main"
-      "sidebar main main";
+      "sidebar main"
+      "sidebar main";
 
     &__sidebar {
-      li {
-        a {
-          display: inline-block;
-        }
-      }
+      flex-direction: column;
 
+      button {
+        flex: 0;
+        height: 3rem;
+        padding: 1rem 0;
+      }
     }
   }
 }

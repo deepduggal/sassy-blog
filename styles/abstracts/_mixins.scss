@@ -3,7 +3,7 @@
 /**
  * Setups a flex container
  */
-@mixin flex-layout($justify: center, $align: center) {
+@mixin flex-layout($justify: default, $align: default) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
@@ -15,10 +15,10 @@
 @mixin button-style($bkgrdColor: colors.$offwhite, $textColor: black, $borderRadius: 0.675rem) {
   background-color: $bkgrdColor;
   color: $textColor;
-  border-radius: $borderRadius;
-  padding: 0.5rem 1rem;
+  // border-radius: $borderRadius;
+  // padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   border: none;
   text-decoration: none;
 

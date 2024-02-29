@@ -7,6 +7,7 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./styles/pages/dashboard.css">
 </head>
@@ -27,33 +28,140 @@
   <main>
     <div class="dashboard">
       <div class="dashboard__sidebar">
-        <ul>
-          <li><a href="./dashboard.html">Dashboard</a></li>
-          <li><a href="#projectl">Projects</a></li>
-          <li><a href="#volunteer">Volunteer</a></li>
-          <li><a href="#donations">Donations</a></li>
-          <li><a href="#statistics">Statistics</a></li>
-        </ul>
+        <button><span><i class="fa-solid fa-pen"></i><!--Write--></span></button>
+        <button><span><i class="fa-solid fa-newspaper"></i><!--Articles--></span></button>
+        <button><span><i class="fa-solid fa-user"></i><!--Profile--></span></button>
       </div>
       <div class="dashboard__content">
-        <h1 class="dashboard__heading">Welcome to your dashboard</h1>
-        <div class="dashboard__content-item">
-          <h2>Your projects</h2>
-          <p>Here are the projects you're currently involved with:</p>
-          <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-          </ul>
-        </div>
-        <div class="dashboard__content-item">
-          <h2>Recommended projects</h2>
-          <p>Here are some projects we think you might be interested in:</p>
-          <ul>
-            <li>Project 4</li>
-            <li>Project 5</li>
-            <li>Project 6</li>
-          </ul>
+        <h1 class="dashboard__heading">Welcome to your Dashboard</h1>
+        <!-- heading -->
+        <h2>Your Articles</h2>
+        <!-- subheading -->
+        <p>Here are the articles you've written:</p>
+        <!-- Articles -->
+        <div class="articles">
+          <!-- Article -->
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+          <div class="dashboard__content-item article card">
+            <img class="article__image" src="https://place.dog/1000/1000" alt="Placeholder image">
+            <div class="article__date">02/28/24</div>
+            <div class="article__title">Title</div>
+            <div class="article__subtitle">Subtitle</div>
+            <div class="article__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</div>
+          </div>
         </div>
       </div>
   </main>

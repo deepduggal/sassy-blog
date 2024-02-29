@@ -2,6 +2,15 @@ header {
   flex: 1;
 }
 
+/**
+ * Setups a flex container
+ */
+/**
+ * Styles a button
+ */
+/**
+ * Styles font
+ */
 .nav {
   display: flex;
   justify-content: space-between;
